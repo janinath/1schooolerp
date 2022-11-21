@@ -1,0 +1,27 @@
+{% extends 'common/masterpage.html' %}
+{% load static %}
+{% block content %}
+
+<table  align="center"  cellspacing="1" cellpadding="1" height="500px" width="1474" border="0" bgcolor="98fb98">
+    <tr align="center">
+        <td><h1>Welcome</h1></td><br /><br />
+            
+    
+    </tr>
+     <tr align="center">
+        <td><a href="{% url 'school_admin:sahome' %}">school admin</a></td>
+    </tr>
+    <tr align="center">
+        <td><a href="{% url 'student:shome' %}">student's login</a></td>
+    </tr>
+    <tr align="center">
+        <td><a href="{% url 'teacher:thome' %}">teacher's login</a></td>
+    </tr>
+    
+</table>
+{% endblock %}
+
+    
+    
+
+

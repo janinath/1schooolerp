@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <div>
+        <!--header-->
+        <table align="left" border="0" cellpadding="5" cellspacing="5" height="100px" width="1474px" bgcolor="#2C8073 ">
+            <tr>
+                <td><img src="{% static 'images/logo.jpg' %}" height="100px" width="100px"></td>
+                <td><h1>xxxx school</h1><br />
+                    
+                </td>
+                <td><!--empty cell--></td>
+                <td><a href="{}">home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="">about us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="">our campus</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="">contact us</a>
+                </td>
+                <td><img src="{% static 'images/students.jpg' %}" width="300px" height="100px"></td>
+            </tr>
+
+        </table>
+    </div> 
+    {% block content %}{% endblock %} 
+    <div>  
+        <table align="left" border="0" cellpadding="5" cellspacing="5" height="80" width="1474" bgcolor="#2C8073">
+            <tr>
+                <td></td>
+            </tr>
+
+        </table>
+
+   
+    
+        
+    </div>
+    
+</body>
+</html>
